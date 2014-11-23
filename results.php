@@ -12,7 +12,7 @@ function normalize_output_field($field)
 
 try
 {
-    $Majors = new MajorsHelper($_POST, 'resource/model.csv');
+    $Majors = new MajorsHelper($_POST, 'resource/lenient_model.csv');
 }
 catch (Exception $e)
 {

@@ -35,8 +35,7 @@ How strong is your aptitude in math?
 <option value="" selected disabled>--</option>
 <option value="0">Poor</option>
 <option value="1">Average</option>
-<option value="2">Fairly Good</option>
-<option value="3">Very Good</option>
+<option value="2">Good</option>
 </select>
 </p>
 </div>
@@ -50,8 +49,7 @@ How strong is your aptitude in writing?
 <option value="" selected disabled>--</option>
 <option value="0">Poor</option>
 <option value="1">Average</option>
-<option value="2">Fairly Good</option>
-<option value="3">Very Good</option>
+<option value="2">Good</option>
 </select>
 </p>
 </div>
@@ -65,8 +63,7 @@ How strong is your aptitude in science?
 <option value="" selected disabled>--</option>
 <option value="0">Poor</option>
 <option value="1">Average</option>
-<option value="2">Fairly Good</option>
-<option value="3">Very Good</option>
+<option value="2">Good</option>
 </select>
 </p>
 </div>
