@@ -60,7 +60,6 @@ class MajorsHelper
                 }
             }
         }
-        unset($major);
         /* Add the names of the remaining majors to 'phase 0 results' array*/
         foreach ($this->majors as $major_name => $major)
         {
@@ -97,7 +96,8 @@ class MajorsHelper
         foreach ($this->majors as $major_name => $major)
         {
             $highest_interests = $this->same_highest_interests($this->user_inputs, $major);
-            /* if one of the major's highest interests is also one of the user's highest interests, add to 'phase 1 results' array */                
+            /* if one of the major's highest interests is also one of the user's highest interests, 
+            add to 'phase 1 results' array */                
             if (!empty($highest_interests))
             {
                 $this->results[1][] = $major_name; 
@@ -108,8 +108,8 @@ class MajorsHelper
                 unset($temp_user_interests[$highest_interest]);
                 unset($temp_major[$highest_interest]);
                 $second_highest_interests = $this->same_highest_interests($temp_user_interests, $temp_major);
-                /* if one of the major's second highest interests is also one of the user's second highest interests or   
-                   the major does not have a second highest interest, add to 'phase 2 results' array*/                         
+                /* if one of the major's second highest interests is also one of the user's second highest 
+                interests or the major does not have a second highest interest, add to 'phase 2 results' array */                         
                                   
                 if ((!empty($second_highest_interests) || max($temp_major) == 0))
                 {
