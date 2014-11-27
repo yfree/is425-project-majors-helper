@@ -38,7 +38,7 @@ elseif (array_key_exists(0, $Majors->results))
 }
 else
 {
-    $results[] = 'Interdisciplinary Studies';
+    $results[] = 'Could not determine an appropriate major.';
 }
 ?>
 <!DOCTYPE html>
